@@ -1,0 +1,31 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Build with Makefile (Debug)",
+            "command": "make",
+            "args": ["debug"],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": ["$gcc"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Build using Makefile with debug symbols"
+        },
+        {
+            "type": "shell",
+            "label": "Clean and Build",
+            "command": "make",
+            "args": ["clean", "debug"],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": ["$gcc"],
+            "group": "build"
+        }
+    ],
+    "version": "2.0.0"
+}
